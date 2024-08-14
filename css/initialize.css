@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none; /*去除边框样式 */
+}
+/* <link rel="stylesheet" href="./../../newFirst.css" /> */
+/* 写在title下面  */
+body {
+  /* CSS3 抗锯齿形 让文字显示的更加清晰  */
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  color: #666;
+  font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
+    " 5B8B\4F53", sans-serif;
+}
+em,
+i {
+  font-style: normal;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+/* a:hover {
+  color: #c81623;
+} */
+li {
+  list-style: none;
+}
+img {
+  /*   border: 0;照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+  border: 0;
+  /* 取消图片底侧有空白缝隙的问题 */
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+/* 清除浮动 */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+}
